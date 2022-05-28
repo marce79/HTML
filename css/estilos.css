@@ -1,0 +1,433 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: #ffcf6f;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size:x-large;
+    color: navy;
+}
+
+nav {
+    text-align: center;
+    background-color: #ffbc37;
+    padding: 2px;
+}
+
+p {
+    text-align:justify;
+}
+
+a {
+    color:navy;
+}
+
+a:hover {
+    color: rgb(199, 114, 4);
+    transition: all 0.2s linear;
+}
+
+aside {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px
+}
+
+footer {
+    background-color: #ffbc37;
+    padding: 2px
+}
+
+
+/* CONTENEDORES DE GRID */
+
+/* Contenedor del inicio */
+
+.contenedor {
+    width: 95%;
+    max-width: 1000px;
+    height:auto;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat (5, auto);
+
+    grid-template-areas: "header header header header"
+                          "nav nav nav nav"
+                          "cont1 cont2 cont3 pagrel"
+                          "cont4 cont5 cont6 pagrel"
+                          "footer footer footer footer";
+}
+
+.contenedor > div,
+.contenedor {
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.cont1 {
+    background: #fae0ad;
+    grid-area: cont1;
+}
+
+.cont2 {
+    background: #fae0ad;
+    grid-area: cont2;
+}
+
+.cont3 {
+    background: #fae0ad;
+    grid-area: cont3;
+}
+
+.cont4 {
+    background: #fae0ad;
+    grid-area: cont4;
+}
+
+.cont5 {
+    background: #fae0ad;
+    grid-area: cont5;
+}
+
+.cont6 {
+    background: #fae0ad;
+    grid-area: cont6;
+}
+
+.pagrel {
+    grid-area: pagrel;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+/* Contenedor del formulario y sus elementos particulares */
+
+.contenedor_form {
+    width: 95%;
+    max-width: 1000px;
+    height:auto;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat (4, auto);
+
+    grid-template-areas: "header_seccion header_seccion header_seccion header_seccion"
+                         "nav nav nav nav"
+                         "formulario formulario formulario pagrel"
+                         "footer footer footer footer";
+}
+
+.contenedor_form > div,
+.contenedor_form {
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.formulario {
+    grid-area: formulario;
+}
+
+
+/* Contenedor de la sección Lugares y sus elementos particulares */
+
+.contenedor_lug {
+    width: 100%;
+    max-width: 1000px;
+    height:auto;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat (9, auto);
+
+    grid-template-areas: "header_seccion header_seccion header_seccion header_seccion"
+                          "nav nav nav nav"
+                          "cont1a cont1b cont1c pagrel"
+                          "cont2a cont2b cont2c pagrel"
+                          "cont3a cont3b cont3c pagrel"
+                          "cont4a cont4b cont4c pagrel"
+                          "cont5a cont5b cont5c pagrel"
+                          "cont6a cont6b cont6c pagrel"
+                          "volver volver volver volver"
+                          "footer footer footer footer";
+}
+
+.contenedor_lug > div,
+.contenedor_lug {
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.header_seccion {
+    text-align: left;
+    font-size:medium;
+    color: navy;
+    grid-area: header_seccion;
+}
+
+.cont1a {
+    background: #fae0ad;
+    grid-area: cont1a;
+}
+
+.cont1b {
+    background: #fae0ad;
+    grid-area: cont1b;
+}
+
+.cont1c {
+    background: #fae0ad;
+    font-size: small;
+    grid-area: cont1c;
+}
+
+.cont2a {
+    background: #fae0ad;
+    grid-area: cont2a;
+}
+
+.cont2b {
+    background: #fae0ad;
+    grid-area: cont2b;
+}
+
+.cont2c {
+    background: #fae0ad;
+    font-size: small;
+    grid-area: cont2c;
+}
+
+.cont3a {
+    background: #fae0ad;
+    grid-area: cont3a;
+}
+
+.cont3b {
+    background: #fae0ad;
+    grid-area: cont3b;
+}
+
+.cont3c {
+    background: #fae0ad;
+    font-size: small;
+    grid-area: cont3c;
+}
+
+.cont4a {
+    background: #fae0ad;
+    grid-area: cont4a;
+}
+
+.cont4b {
+    background: #fae0ad;
+    grid-area: cont4b;
+}
+
+.cont4c {
+    background: #fae0ad;
+    font-size: small;
+    grid-area: cont4c;
+}
+
+.cont5a {
+    background: #fae0ad;
+    grid-area: cont5a;
+}
+
+.cont5b {
+    background: #fae0ad;
+    grid-area: cont5b;
+}
+
+.cont5c {
+    background: #fae0ad;
+    font-size: small;
+    grid-area: cont5c;
+}
+
+.cont6a {
+    background: #fae0ad;
+    grid-area: cont6a;
+}
+
+.cont6b {
+    background: #fae0ad;
+    grid-area: cont6b;
+}
+
+.cont6c {
+    background: #fae0ad;
+    font-size: small;
+    grid-area: cont6c;
+}
+
+.volver {
+    grid-area: volver;
+}
+
+
+/* Contenedor de la sección Objetivo y sus elementos particulares */
+
+.contenedor_obj {
+    width: 95%;
+    max-width: 1000px;
+    height:auto;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat (4, auto);
+
+    grid-template-areas: "header_seccion header_seccion header_seccion header_seccion"
+                          "nav nav nav nav"
+                          "obj obj obj pagrel"
+                          "footer footer footer footer";
+}
+
+.contenedor_obj > div,
+.contenedor_obj {
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.header_seccion {
+    grid-area: header_seccion;
+}
+
+.obj {
+    grid-area: obj;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 810px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						     "nav nav nav"
+						     "cont1 cont2 pagrel"
+                             "cont3 cont4 pagrel"
+						     "cont5 cont6 pagrel"
+                             "footer footer footer";
+	}
+}
+
+@media screen and (max-width: 290px){
+	.contenedor {
+		grid-template-areas: "header"
+						     "nav"
+						     "cont1" 
+                             "cont2"
+                             "cont3" 
+                             "cont4"
+						     "cont5" 
+                             "cont6" 
+                             "pagrel"
+                             "footer";
+	}
+}
+
+@media screen and (max-width: 810px){
+	.contenedor_form {
+		grid-template-areas: "header header header"
+						     "nav nav nav"
+						     "formulario formulario pagrel"
+                             "footer footer footer";
+	}
+}
+
+@media screen and (max-width: 290px){
+	.contenedor_form {
+		grid-template-areas: "header"
+						     "nav"
+						     "formulario" 
+                             "pagrel"
+                             "footer";
+	}
+}
+
+@media screen and (max-width: 810px){
+	.contenedor_lug {
+		grid-template-areas: "header_seccion header_seccion header_seccion"
+						     "nav nav nav"
+						     "cont1a cont1b pagrel"
+                             "cont1c cont1c pagrel"
+                             "cont2a cont2b pagrel"
+                             "cont2c cont2c pagrel"
+                             "cont3a cont3b pagrel"
+                             "cont3c cont3c pagrel"
+                             "cont4a cont4b pagrel"
+                             "cont4c cont4c pagrel"
+                             "cont5a cont5b pagrel"
+                             "cont5c cont5c pagrel"
+                             "cont6a cont6b pagrel"
+                             "cont6c cont6c pagrel"
+                             "footer footer footer";
+	}
+}
+
+@media screen and (max-width: 290px){
+	.contenedor_lug {
+		grid-template-areas: "header_seccion"
+						     "nav"
+						     "cont1a"
+                             "cont1b"
+                             "cont1c"
+                             "cont2a"
+                             "cont2b"
+                             "cont2c"
+                             "cont3a"
+                             "cont3b"
+                             "cont3c"
+                             "cont4a"
+                             "cont4b"
+                             "cont4c"
+                             "cont5a"
+                             "cont5b"
+                             "cont5c"
+                             "cont6a"
+                             "cont6b"
+                             "cont6c" 
+                             "pagrel"
+                             "footer";
+	}
+}
+
+@media screen and (max-width: 810px){
+	.contenedor_obj {
+		grid-template-areas: "header_seccion header_seccion header_seccion"
+						     "nav nav nav"
+						     "obj obj pagrel"
+                             "footer footer footer";
+	}
+}
+
+@media screen and (max-width: 290px){
+	.contenedor_obj {
+		grid-template-areas: "header_seccion"
+						     "nav"
+						     "obj" 
+                             "pagrel"
+                             "footer";
+	}
+}

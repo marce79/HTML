@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LST - Contacto</title>
+    <link rel="icon" href="img/logosintacc_02.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/de88c028e6.js" crossorigin="anonymous"></script>
+    <script src="js/validar_formulario.js"></script>
+
+</head>
+<body>
+    <div class="contenedor_form">
+        <header class="header_seccion">
+            <a id="home"><h1>Lugares Sin TACC</h1></a>
+            <br>            
+        </header>
+        <nav class="nav">
+            <div>
+                <a href="index.html#home">Inicio</a>
+                <a href="lugares.html">Lugares</a>
+                <a href="objetivo.html">Nuestro objetivo</a>   
+                <a href="formulario.html">Contacto</a> 
+            </div>
+        </nav>
+    <main class="formulario">
+        <h2>Contacto</h2>
+        <form name=contacto action="Link" method="POST" target="_blank">
+            <fieldset>
+                <legend>Completá con tus datos personales</legend>
+                <label for="fname">Nombre:</label>
+                <input id="fname" type="text" name="fname"><br>
+                <label for="lname">Apellido:</label>
+                <input id="lname" type="text" name="lname"><br>
+                <label for="email">E-mail:</label>
+                <input id="email" type="text" name="email"><br>
+                <label for="fnac">Fecha de nacimiento:</label>
+                <input id="fnac" type="date" name="fnac"><br><br>
+                ¿Sos celíacx?
+                <select name="celiac">
+                    <option></option>
+                    <option>Sí</option>
+                    <option>No</option>
+                </select>
+                <p>Comentario:</p>
+                <textarea name="comment" rows="10" cols="40"></textarea><br><br>
+                <input type="submit" value="ENVIAR" onclick="validar_envio()">
+            </fieldset>
+        </form>        
+        <br>
+        <br><br>
+    </main>
+    <aside class="pagrel">
+        <h3>Links útiles</h3>
+        <br>
+        <h4><b><a href="https://www.argentina.gob.ar/salud/celiaquia">¿Qué es la celiaquía?</a></b></h4>
+        <br>
+        <h4><b><a href="https://listadoalg.anmat.gob.ar/Home">Listado de alimentos libres de gluten</a></b></h4>
+        <br>
+        <h4><b><a href="https://www.argentina.gob.ar/salud/celiaquia/legislacion">Legislación vigente</a></b></h4>
+        <br>
+        <h4><b><a href="https://sintacc.org.ar/">Asociación Celíaca Argentina</a></b></h4>
+    </aside>
+    <footer class="footer">
+        <a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/home" target="blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:mfparisi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </footer>
+</body>
+</html>
